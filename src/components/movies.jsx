@@ -4,7 +4,7 @@ import { Empty, Movie, MovieContainer } from "../styles";
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
 
 const MovieItem = ({ movie, onStar, starredMovie }) => (
-  <Movie key={movie.id}>
+  <Movie>
     <img
       src={`${IMG_URL}${movie.poster_path}`}
       alt={movie.title}
@@ -33,6 +33,7 @@ const MoviesContent = ({ data, onStar, starredMovie }) => {
       {data?.map((movie) => {
         return (
           <MovieItem
+            key={movie.id}
             movie={movie}
             onStar={onStar}
             starredMovie={starredMovie}
