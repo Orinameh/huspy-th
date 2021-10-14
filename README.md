@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Instructions
 
-Clone the repo and `cd` into the `huspy-th` folder i.e `cd huspy-app`.
+Clone the repo and `cd` into the `huspy-th` folder i.e `cd huspy-th`.
 
 Run
 
