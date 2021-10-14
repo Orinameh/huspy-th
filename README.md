@@ -12,6 +12,6 @@ Run
 
 After the dependencies are installed, then run
 
-`yarn star` or `npm install`
+`yarn start` or `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
