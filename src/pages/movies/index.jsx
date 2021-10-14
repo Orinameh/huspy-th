@@ -33,12 +33,17 @@ function Movies() {
 
   const onStar = (movie) => {
     setStarredMovie(movie);
+    const alreadyAdded = favoriteMovies.some((movie_) => movie_.id === movie.id)
 
     if(clickedTab === "my") {
         // Additional feature for fun
         dispatch(removeFavoriteMovie(movie.id));
       } else {
-        dispatch(addFavoriteMovie(movie)); 
+        if(alreadyAdded) {
+            return;
+        } else {
+            dispatch(addFavoriteMovie(movie)); 
+        }
       }
     
   };
