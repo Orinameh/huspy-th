@@ -2,11 +2,12 @@ import { Star } from ".";
 import { Empty, Movie, MovieContainer } from "../styles";
 
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
+const PLACEHOLDER_IMG = "https://via.placeholder.com/300";
 
 const MovieItem = ({ movie, onStar, starredMovie }) => (
   <Movie>
     <img
-      src={`${IMG_URL}${movie.poster_path}`}
+      src={ movie.poster_path ? `${IMG_URL}${movie.poster_path}` : PLACEHOLDER_IMG}
       alt={movie.title}
       loading="lazy"
     />
